@@ -1,0 +1,163 @@
+/* Ajustes globales */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Titulares con Montserrat */
+h1, h2, h3, .navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Variables de color */
+:root {
+  --primary-color: #0d3b66;
+  --secondary-color: #f4d35e;
+  --light-color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Hero con efecto parallax (opcional) */
+.hero {
+  background: url("../imagenes/imagenesfondo-legal.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Botón principal */
+.btn-main {
+  background-color: var(--secondary-color);
+  color: #000;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-main:hover {
+  background-color: #e6c344;
+}
+
+/* Sección Especialidades */
+.services h2 {
+  margin-bottom: 2rem;
+}
+
+/* Tarjeta de especialidad */
+.service-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.service-card .card-body {
+  padding: 1.5rem;
+}
+
+.service-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.service-card .card-text {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Hover para botón interno (opcional) */
+.service-card .btn-secondary {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.service-card .btn-secondary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Sobre mí */
+.about img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA final */
+.cta-final {
+  background-color: #fafafa;
+}
+
+.cta-final h3 {
+  margin-bottom: 1rem;
+}
+
+/* Contacto */
+.contact-section {
+  background-color: var(--light-color);
+  padding: 2rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
